@@ -1,0 +1,4 @@
+﻿l_english:
+  domain_rule.1.2.title:0 "Birincil ünvan dışında toprak tutma"
+  domain_rule.1.2.desc:0 "[cheater.GetFirstName] aşağıdaki toprakları tutarak bu kuralı çiğniyor:\n\n[domain.GetName]"
+  domain_rule.1.2.option:0 "Kendisini kınıyorum."

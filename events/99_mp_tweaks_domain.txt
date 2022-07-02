@@ -1,0 +1,49 @@
+namespace = domain_rule
+
+domain_rule.1 = { # Primary title dışında toprak tutma (kontrol)
+	type = character_event
+  hidden = yes
+	trigger = {
+		is_ai = no
+	}
+	immediate = {
+		save_scope_as = cheater
+		every_county = {
+			limit = {
+				holder = root
+				NOR = {
+					duchy = root.primary_title
+					kingdom = root.primary_title
+					empire = root.primary_title
+				}
+			}
+			add_to_list = NAME
+			save_scope_as = domain
+			every_player = {
+				trigger_event = domain_rule.1.2
+			}
+		}
+	}
+}
+
+domain_rule.1.2 = { # Primary title dışında toprak tutma (gösterim)
+	type = character_event
+	title = domain_rule.1.2.title
+	desc = domain_rule.1.2.desc
+	theme = abduct_scheme
+	override_background = gallows
+	override_icon = {
+		reference = "gfx/interface/icons/event_types/type_domain.dds"
+	}
+	left_portrait = {
+		character = scope:cheater
+		animation = shame
+	}
+	right_portrait = {
+		character = scope:cheater.faith.religious_head
+		animation = disapproval
+	}
+	option = {
+		name = domain_rule.1.2.option
+	}
+}

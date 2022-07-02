@@ -1,0 +1,5 @@
+yearly_playable_pulse = {
+	events = {
+		domain_rule.1
+	}
+}
