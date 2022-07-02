@@ -1,0 +1,214 @@
+# 1.6.1.2
+
+hostile_scheme_base_chance_modifier = {
+	first_valid = {
+		modifier = {
+			add = -30
+			exists = scope:target.primary_title
+			scope:target.primary_title.tier = tier_empire
+			desc = "SCHEME_TARGET_IS_AN_EMPEROR"
+		}
+		modifier = {
+			add = -20
+			exists = scope:target.primary_title
+			scope:target.primary_title.tier = tier_kingdom
+			desc = "SCHEME_TARGET_IS_A_KING"
+		}
+	}
+	
+	modifier = { # Minor Lifestyle Perk protection for Courtiers
+		add = {
+			value = 0
+			subtract = prepared_for_anything_perk_secondary_percentage
+		}
+		scope:target = {
+			is_alive = yes
+			is_ruler = no
+			exists = court_owner
+			court_owner = {
+				has_perk = prepared_for_anything_perk
+			}
+			NOT = { court_owner = scope:owner }
+			NOT = { has_perk = prepared_for_anything_perk }
+		}
+		desc = "SCHEME_PREPARED_FOR_ANYTHING_LIEGE_PERK_MODIFIER"
+	}
+	
+	modifier = { # Bonus for murdering Pool characters, as you can't have agents against them
+		add = 25
+		scope:target = {
+			is_pool_character = yes
+			NOT = { intrigue >= very_high_skill_rating }
+		}
+		desc = "SCHEME_TARGET_TRAVELLING_UNSAFE_ROADS"
+	}
+	
+	modifier = { # ...unless they're sneaky as all heck
+		add = -10
+		scope:target = {
+			is_pool_character = yes
+			intrigue >= very_high_skill_rating
+		}
+		desc = "SCHEME_TARGET_TRAVELLING_INCOGNITO"
+	}
+	
+	first_valid = { # Essentially the Base
+		modifier = {
+			add = 75
+			scope:owner = {
+				exists = scope:target.cp:councillor_spymaster
+				scope:target.cp:councillor_spymaster = this
+			}
+			desc = "SCHEME_I_AM_SPYMASTER"
+		}
+		modifier = {
+			add = 75
+			scope:target = {
+				is_landed = no
+			}
+			scope:owner = {
+				exists = scope:target.liege.cp:councillor_spymaster
+				scope:target.liege.cp:councillor_spymaster = this
+			}
+			desc = "SCHEME_I_AM_SPYMASTER_OF_LIEGE"
+		}
+		modifier = {
+			add = 75
+			scope:target = {
+				is_landed = no
+			}
+			scope:owner = {
+				exists = scope:target.host.cp:councillor_spymaster
+				scope:target.host.cp:councillor_spymaster = this
+			}
+			desc = "SCHEME_I_AM_SPYMASTER_OF_HOST"
+		}
+		modifier = {
+			add = 75
+			scope:owner = {
+				has_relation_guardian = scope:target
+			}
+			desc = "SCHEME_I_AM_GUARDIAN"
+		}
+		modifier = {
+			add = 25
+			scope:target = {
+				is_ruler = no
+			}
+			exists = scope:target.liege
+			scope:target.liege = scope:owner
+			desc = "SCHEME_TARGET_IN_MY_COURT"
+		}
+		modifier = {
+			add = 15
+			scope:owner = {
+				is_councillor_of = scope:target
+			}
+			desc = "SCHEME_I_AM_COUNCILLOR"
+		}
+		modifier = {
+			add = 15
+			scope:owner = {
+				has_relation_lover = scope:target
+			}
+			desc = "SCHEME_TARGET_IS_LOVER"
+		}
+		modifier = {
+			add = 10
+			scope:owner = {
+				is_spouse_of = scope:target
+			}
+			desc = "SCHEME_TARGET_IS_SPOUSE"
+		}
+		modifier = {
+			add = 5
+			scope:owner = {
+				is_close_family_of = scope:target
+			}
+			desc = "SCHEME_TARGET_IS_CLOSE_FAMILY"
+		}
+	}
+	
+	modifier = { # Vengeful Bonus
+		add = vengeful_scheme_success_chance_modifier
+		scope:owner = {
+			has_trait = vengeful
+			OR = {
+				has_relation_rival = scope:target	
+				has_relation_nemesis = scope:target
+			}
+		}
+		desc = "SCHEME_VENGEFUL_RIVAL"
+	}
+	
+	modifier = { # Culture Bonus
+		add = 15
+		scope:owner = {
+			culture = {
+				has_cultural_parameter = hostile_action_vs_rival_bonuses
+			}
+			OR = {
+				has_relation_rival = scope:target	
+				has_relation_nemesis = scope:target
+			}
+		}
+		desc = "SCHEME_EYE_FOR_AN_EYE"
+	}
+	
+	modifier = { # Culture Bonus
+		add = -50
+		scope:owner = {
+			culture = {
+				has_cultural_parameter = hostile_scheme_success_chance_vs_spouse_penalty
+			}
+			is_spouse_of = scope:target	
+		}
+		desc = "SCHEME_WEDDING_CEREMONIES"
+	}
+	
+	modifier = {
+		add = -75
+		always = scope:exposed
+		desc = "SCHEME_IS_EXPOSED"
+	}
+	
+	# Difficulty
+	modifier = {
+		add = -25
+		has_game_rule = easy_difficulty
+		scope:owner = {
+			is_ai = yes
+		}
+		scope:target = {
+			is_ai = no
+		}
+		desc = "SCHEME_SUCCESS_DIFFICULTY_EASY"
+	}
+	
+	modifier = {
+		add = -75
+		has_game_rule = very_easy_difficulty
+		scope:owner = {
+			is_ai = yes
+		}
+		scope:target = {
+			is_ai = no
+		}
+		desc = "SCHEME_SUCCESS_DIFFICULTY_VERY_EASY"
+	}
+
+	# Struggle
+	modifier = {
+		add = -25
+		scope:owner = {
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = iberian_struggle
+				has_struggle_phase_parameter = struggle_agents_less_likely_to_join_schemes
+				is_secondary_character_involvement_involved_trigger = {
+					CHAR = scope:target
+				}
+			}
+		}
+	}
+}
