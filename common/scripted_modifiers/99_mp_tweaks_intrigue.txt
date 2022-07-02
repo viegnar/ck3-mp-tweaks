@@ -211,4 +211,19 @@ hostile_scheme_base_chance_modifier = {
 			}
 		}
 	}
+
+	# added by viegnar
+	modifier = {
+		scope:owner = {
+			is_ai = no
+			NOR = {
+				has_trait = schemer
+			}
+		}
+		scope:target = {
+			is_ai = no
+		}
+		add = -1000
+		desc = "SCHEME_SUCCESS_SERVER_RULES"
+	}
 }
