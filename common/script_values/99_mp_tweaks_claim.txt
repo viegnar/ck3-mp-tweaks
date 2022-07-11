@@ -1,3 +1,40 @@
+# 1.6.1.2
+
+claim_piety_value = {
+	value = {
+		add = minor_piety_value
+		multiply = 2
+		if = {
+			limit = {
+				scope:target = {
+					tier = tier_duchy
+				}
+			}
+			multiply = 2
+		}
+		if = {
+			limit = {
+				scope:target = {
+					tier = tier_kingdom
+				}
+			}
+			multiply = 4
+		}
+		if = {
+			limit = {
+				scope:target = {
+					tier = tier_empire
+				}
+			}
+			multiply = 8
+		}
+		add = {
+			value = scope:actor.sub_realm_size
+			multiply = 10
+		}
+	}
+}
+
 # Sanctioned Loopholes
 minor_buy_claim_piety_value = {
 	value = minor_piety_value
