@@ -37,6 +37,20 @@ vassal_claim_liege_title_interaction = {
 						desc = lower_prestige_level_than_liege
 					}
 				}
+
+				# added by viegnar
+				if = {
+					limit = {
+						scope:actor = {
+							is_ai = no
+						}
+					}
+					add = {
+						value = 100000
+						desc = server_rules_about_vassal_claim_liege_title
+					}
+				}
+
 				min = 0
 			}
 		}
