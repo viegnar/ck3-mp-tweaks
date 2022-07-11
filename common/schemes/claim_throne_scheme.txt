@@ -121,6 +121,12 @@ claim_throne = {
 			always = scope:exposed
 			desc = "SCHEME_IS_EXPOSED"
 		}
+
+		# added by viegnar
+		modifier = {
+			desc = "SERVER_RULES_ABOUT_CLAIM_THRONE_SCHEME"
+			add = -1000
+		}
 	}
 	
 	agent_success_chance = {
@@ -235,7 +241,7 @@ claim_throne = {
 	
 	minimum_progress_chance = 20
 	maximum_progress_chance = 80
-	minimum_success = 5
+	minimum_success = 0
 	maximum_secrecy = 95
 	maximum_success = 90
 	
