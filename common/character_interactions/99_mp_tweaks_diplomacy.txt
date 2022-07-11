@@ -500,6 +500,20 @@ offer_vassalization_interaction = {
 			scope:high_obligations = yes
 			desc = CONTRACT_HIGH_TAXES_REASON
 		}
+
+		# added by viegnar
+		modifier = {
+			desc = offer_vassalization_debuff_from_server_rules
+			trigger = {
+				scope:actor = {
+					is_ai = no
+				}
+				scope:recipient = {
+					is_ai = yes
+				}
+			}
+			add = -100
+		}
 	}
 
 	# Low starting obligations
