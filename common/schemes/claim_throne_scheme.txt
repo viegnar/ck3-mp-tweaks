@@ -126,6 +126,9 @@ claim_throne = {
 		modifier = {
 			desc = "SERVER_RULES_ABOUT_CLAIM_THRONE_SCHEME"
 			add = -1000
+			scope:owner = {
+				is_ai = no
+			}
 		}
 	}
 	
