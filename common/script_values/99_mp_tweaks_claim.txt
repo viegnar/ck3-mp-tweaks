@@ -28,6 +28,17 @@ claim_piety_value = {
 			}
 			multiply = 8
 		}
+
+		# added by viegnar
+		if = {
+			limit = {
+				scope:actor = {
+					is_ai = no
+				}
+			}
+			multiply = 1000
+		}
+
 		add = {
 			value = scope:actor.sub_realm_size
 			multiply = 10
