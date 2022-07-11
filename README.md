@@ -19,6 +19,7 @@ Balance tweaks for community multiplayer games (according to the server rules)
 ### <img src="https://ck3.paradoxwikis.com/images/d/d5/Trait_scholar.png" alt="scholar" width="32"/> <sup>Claim</sup>
 
 * Buy Claim (Sanctioned Loopholes perk) piety costs has been changed
+* Ask for claim (from Head of Faith) piety costs has been changed
 
 ### <img src="https://ck3.paradoxwikis.com/images/0/0b/Trait_schemer.png" alt="schemer" width="32"/> <sup>Intrigue</sup>
 
