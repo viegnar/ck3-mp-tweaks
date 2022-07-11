@@ -224,6 +224,6 @@ hostile_scheme_base_chance_modifier = {
 			is_ai = no
 		}
 		add = -1000
-		desc = "SCHEME_SUCCESS_SERVER_RULES"
+		desc = "SERVER_RULES_ABOUT_SCHEMER_TRAIT_FOR_HOSTILE_SCHEMES"
 	}
 }

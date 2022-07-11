@@ -3,7 +3,7 @@
 
   faith_creation_cost_ruleset_impact:0 "Sunucu kuralları"
 
-  SCHEME_SUCCESS_SERVER_RULES:0 "[GetTrait('schemer').GetName(GetPlayer)|LV] değilsiniz: $VALUE|0=+%/$"
+  SERVER_RULES_ABOUT_SCHEMER_TRAIT_FOR_HOSTILE_SCHEMES:0 "[GetTrait('schemer').GetName(GetPlayer)|LV] değilsiniz: $VALUE|0=+%/$"
 
   SERVER_RULES_ABOUT_CLAIM_THRONE_SCHEME:0 "Sunucu kuralları: $VALUE|=+0$"
 
