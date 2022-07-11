@@ -1,0 +1,33 @@
+# Sanctioned Loopholes
+minor_buy_claim_piety_value = {
+	value = minor_piety_value
+	multiply = 5
+}
+medium_buy_claim_piety_value = {
+	value = minor_buy_claim_piety_value
+	multiply = 2
+}
+major_buy_claim_piety_value = {
+	value = medium_buy_claim_piety_value
+	multiply = 2
+}
+massive_buy_claim_piety_value = {
+	value = major_buy_claim_piety_value
+	multiply = 2
+}
+minor_buy_claim_piety_loss = {
+	value = 0
+	subtract = minor_buy_claim_piety_value
+}
+medium_buy_claim_piety_loss = {
+	value = 0
+	subtract = medium_buy_claim_piety_value
+}
+major_buy_claim_piety_loss = {
+	value = 0
+	subtract = major_buy_claim_piety_value
+}
+massive_buy_claim_piety_loss = {
+	value = 0
+	subtract = massive_buy_claim_piety_value
+}
