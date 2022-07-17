@@ -12,6 +12,10 @@ Balance tweaks for community multiplayer games (according to the server rules)
 
 * A yearly event that tells if someone holds a domain out of their primary title
 
+### <img src="https://ck3.paradoxwikis.com/images/5/5b/Trait_cautious_leader.png" alt="architect" width="32"/> <sup>Army</sup>
+
+* A game rule to limit same type regiment units (1/2/3/unlimited)
+
 ### <img src="https://ck3.paradoxwikis.com/images/5/5c/Trait_theologian.png" alt="theologian" width="32"/> <sup>Religion</sup>
 
 * Disabled religion reforming for abrahamic and norse religions
