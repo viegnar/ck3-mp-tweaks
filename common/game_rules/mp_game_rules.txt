@@ -1,0 +1,7 @@
+max_distinct_regiment_type = {
+	default = max_distinct_regiment_type_unlimited
+	max_distinct_regiment_type_unlimited = {}
+	max_distinct_regiment_type_one = {}
+	max_distinct_regiment_type_two = {}
+	max_distinct_regiment_type_three = {}
+}

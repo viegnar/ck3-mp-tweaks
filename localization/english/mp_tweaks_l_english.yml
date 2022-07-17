@@ -1,4 +1,14 @@
 ﻿l_english:
+  rule_max_distinct_regiment_type: "#X MP Tweaks:#! Düzenli Asker Limiti"
+  setting_max_distinct_regiment_type_unlimited: "Kapalı"
+  setting_max_distinct_regiment_type_unlimited_desc: "Hiç bir kısıtlama yok."
+  setting_max_distinct_regiment_type_one: "1"
+  setting_max_distinct_regiment_type_one_desc: "Oyuncular bir düzenli asker türünden en fazla 1 adet yaratabilir."
+  setting_max_distinct_regiment_type_two: "2"
+  setting_max_distinct_regiment_type_two_desc: "Oyuncular bir düzenli asker türünden en fazla 2 adet yaratabilir."
+  setting_max_distinct_regiment_type_three: "3"
+  setting_max_distinct_regiment_type_three_desc: "Oyuncular bir düzenli asker türünden en fazla 3 adet yaratabilir."
+
   offer_vassalization_debuff_from_server_rules:0 "Sunucu kuralları: $VALUE|=+0$"
 
   faith_creation_cost_ruleset_impact:0 "Sunucu kuralları"

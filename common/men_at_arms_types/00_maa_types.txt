@@ -5,6 +5,11 @@
 
 light_footmen = {
 	type = skirmishers
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = light_footmen
+		}
+	}
 	
 	damage = 10
 	toughness = 16
@@ -35,6 +40,12 @@ light_footmen = {
 
 bowmen = {
 	type = archers
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = bowmen
+		}
+	}
 	
 	damage = 25
 	toughness = 10
@@ -64,6 +75,12 @@ bowmen = {
 
 light_horsemen = {
 	type = light_cavalry
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = light_horsemen
+		}
+	}
 	
 	damage = 22
 	toughness = 15
@@ -101,6 +118,12 @@ light_horsemen = {
 
 pikemen_unit = {
 	type = pikemen
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = pikemen_unit
+		}
+	}
 	
 	damage = 22
 	toughness = 24
@@ -137,6 +160,12 @@ pikemen_unit = {
 #Tribal Era
 armored_footmen = {
 	type = heavy_infantry
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = armored_footmen
+		}
+	}
 	
 	damage = 32
 	toughness = 22
@@ -162,6 +191,12 @@ armored_footmen = {
 onager = {
 	type = siege_weapon
 	fights_in_main_phase = no
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = onager
+		}
+	}
 	
 	damage = 0
 	toughness = 12
@@ -180,6 +215,12 @@ onager = {
 #Medieval Era
 armored_horsemen = {
 	type = heavy_cavalry
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = armored_horsemen
+		}
+	}
 	
 	damage = 100
 	toughness = 35
@@ -217,6 +258,12 @@ armored_horsemen = {
 mangonel = {
 	type = siege_weapon
 	fights_in_main_phase = no
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = mangonel
+		}
+	}
 	
 	damage = 0
 	toughness = 12
@@ -235,6 +282,12 @@ mangonel = {
 #High Medieval Era
 crossbowmen = {
 	type = archers
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = crossbowmen
+		}
+	}
 	
 	damage = 42
 	toughness = 18
@@ -266,6 +319,12 @@ crossbowmen = {
 trebuchet = {
 	type = siege_weapon
 	fights_in_main_phase = no
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = trebuchet
+		}
+	}
 	
 	damage = 0
 	toughness = 12
@@ -286,6 +345,12 @@ trebuchet = {
 bombard = {
 	type = siege_weapon
 	fights_in_main_phase = no
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = bombard
+		}
+	}
 	
 	damage = 0
 	toughness = 12

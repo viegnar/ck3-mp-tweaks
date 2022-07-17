@@ -25,7 +25,10 @@ huscarl = {
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_huscarls }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_huscarls
+			REGIMENT_TYPE = huscarl
+		}
 	}
 
 	winter_bonus = {
@@ -44,6 +47,12 @@ huscarl = {
 
 landsknecht = {
 	type = pikemen
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = landsknecht
+		}
+	}
 	
 	damage = 30
 	toughness = 24
@@ -73,9 +82,11 @@ landsknecht = {
 
 longbowmen = {
 	type = archers
+
 	can_recruit = {
-		culture = {
-			has_cultural_parameter = unlock_maa_longbowmen
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_longbowmen
+			REGIMENT_TYPE = longbowmen
 		}
 	}
 	
@@ -119,6 +130,12 @@ longbowmen = {
 
 goedendag = {
 	type = skirmishers
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = goedendag
+		}
+	}
 	
 	damage = 13
 	toughness = 18
@@ -177,6 +194,12 @@ gendarme = {
 
 chasseur = {
 	type = light_cavalry
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = chasseur
+		}
+	}
 	
 	damage = 40
 	toughness = 15
@@ -212,6 +235,12 @@ chasseur = {
 
 picchieri = {
 	type = pikemen
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = picchieri
+		}
+	}
 	
 	damage = 40
 	toughness = 24
@@ -242,6 +271,12 @@ picchieri = {
 
 praetorian = {
 	type = heavy_infantry
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = praetorian
+		}
+	}
 	
 	damage = 60
 	toughness = 30
@@ -263,6 +298,12 @@ praetorian = {
 
 caballero = {
 	type = light_cavalry
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = caballero
+		}
+	}
 	
 	damage = 22
 	toughness = 16
@@ -320,7 +361,10 @@ monaspa = {
 	}
 	
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_monaspa }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_monaspa
+			REGIMENT_TYPE = monaspa
+		}
 	}
 
 	buy_cost = { gold = monaspa_recruitment_cost }
@@ -360,7 +404,10 @@ cataphract = {
 	}
 	
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_cataphract }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_cataphract
+			REGIMENT_TYPE = cataphract
+		}
 	}
 
 	buy_cost = { gold = cataphract_recruitment_cost }
@@ -374,6 +421,12 @@ cataphract = {
 
 hobelar = {
 	type = light_cavalry
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = hobelar
+		}
+	}
 	
 	damage = 22
 	toughness = 15
@@ -407,6 +460,12 @@ hobelar = {
 
 schiltron = {
 	type = pikemen
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = schiltron
+		}
+	}
 	
 	damage = 36
 	toughness = 28
@@ -457,7 +516,10 @@ metsanvartija = {
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_metsanvartija }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_metsanvartija
+			REGIMENT_TYPE = metsanvartija
+		}
 	}
 
 	buy_cost = { gold = metsanvartija_recruitment_cost }
@@ -493,7 +555,10 @@ horse_archers = {
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_horse_archers }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_horse_archers
+			REGIMENT_TYPE = horse_archers
+		}
 	}
 
 	buy_cost = { gold = horse_archers_recruitment_cost }
@@ -518,7 +583,10 @@ ayyar = {
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_ayyar }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_ayyar
+			REGIMENT_TYPE = ayyar
+		}
 	}
 	
 	buy_cost = { gold = ayyar_recruitment_cost }
@@ -544,7 +612,10 @@ mubarizun = {
 	}
 	
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_mubarizun }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_mubarizun
+			REGIMENT_TYPE = mubarizun
+		}
 	}
 	
 	buy_cost = { gold = mubarizun_recruitment_cost }
@@ -585,7 +656,10 @@ mulaththamun = { #Murabit Cavalry
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_mulaththamun }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_mulaththamun
+			REGIMENT_TYPE = mulaththamun
+		}
 	}
 
 	buy_cost = { gold = mulaththamun_recruitment_cost }
@@ -618,7 +692,10 @@ archers_of_the_nile = { #Nile Archers
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_archers_of_the_nile }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_archers_of_the_nile
+			REGIMENT_TYPE = archers_of_the_nile
+		}
 	}
 
 	buy_cost = { gold = archers_of_the_nile_recruitment_cost }
@@ -632,6 +709,12 @@ archers_of_the_nile = { #Nile Archers
 
 paiks = { #Indian Footmen - carrying bows but also swords and spears.
 	type = archers
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = paiks
+		}
+	}
 	
 	damage = 28
 	toughness = 16
@@ -670,7 +753,10 @@ druzhina = {
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_druzhina }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_druzhina
+			REGIMENT_TYPE = druzhina
+		}
 	}
 	
 	buy_cost = { gold = druzhina_recruitment_cost }
@@ -708,7 +794,10 @@ hussar = {
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_hussar }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_hussar
+			REGIMENT_TYPE = hussar
+		}
 	}
 
 	buy_cost = { gold = hussar_recruitment_cost }
@@ -739,7 +828,10 @@ horn_warrior = {
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_horn_warrior }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_horn_warrior
+			REGIMENT_TYPE = horn_warrior
+		}
 	}
 
 	buy_cost = { gold = horn_warrior_recruitment_cost }
@@ -770,7 +862,10 @@ bush_hunter = {
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_bush_hunter }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_bush_hunter
+			REGIMENT_TYPE = bush_hunter
+		}
 	}
 
 	buy_cost = { gold = bush_hunter_recruitment_cost }
@@ -795,7 +890,10 @@ shomer = {
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_shomer }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_shomer
+			REGIMENT_TYPE = shomer
+		}
 	}
 
 	buy_cost = { gold = shomer_recruitment_cost }
@@ -833,7 +931,10 @@ garudas = {
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_garudas }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_garudas
+			REGIMENT_TYPE = garudas
+		}
 	}
 	
 	stack = 100
@@ -859,7 +960,10 @@ khandayat = {
 	}
 	
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_khandayat }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_khandayat
+			REGIMENT_TYPE = khandayat
+		}
 	}
 
 	buy_cost = { gold = khandayat_recruitment_cost }
@@ -894,7 +998,10 @@ mountaineer = {
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_mountaineer }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_mountaineer
+			REGIMENT_TYPE = mountaineer
+		}
 	}
 	
 	buy_cost = { gold = mountaineer_recruitment_cost }
@@ -908,6 +1015,12 @@ mountaineer = {
 
 sahel_horsemen = {
 	type = light_cavalry
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = sahel_horsemen
+		}
+	}
 	
 	damage = 22
 	toughness = 15
@@ -962,7 +1075,10 @@ guinea_warrior = { #AKA Guinean uplander
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_guinea_warrior }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_guinea_warrior
+			REGIMENT_TYPE = guinea_warrior
+		}
 	}
 
 	buy_cost = { gold = guinea_warrior_recruitment_cost }
@@ -976,6 +1092,12 @@ guinea_warrior = { #AKA Guinean uplander
 
 sarawit = { #AKA Ethiopian mountaineer
 	type = heavy_infantry
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = sarawit
+		}
+	}
 	
 	damage = 32
 	toughness = 26
@@ -1024,7 +1146,10 @@ abudrar = { #AKA Jabali - Berber mountaineer
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_abudrar }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_abudrar
+			REGIMENT_TYPE = abudrar
+		}
 	}
 	
 	buy_cost = { gold = abudrar_recruitment_cost }
@@ -1057,7 +1182,10 @@ zbrojnosh = {
 	}
 	
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_zbrojnosh }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_zbrojnosh
+			REGIMENT_TYPE = zbrojnosh
+		}
 	}
 	
 	buy_cost = { gold = zbrojnosh_recruitment_cost }
@@ -1087,7 +1215,10 @@ palace_guards = {
 	}
 
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_palace_guards }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_palace_guards
+			REGIMENT_TYPE = palace_guards
+		}
 	}
 	
 	buy_cost = { gold = palace_guards_recruitment_cost }
@@ -1101,6 +1232,12 @@ palace_guards = {
 
 chu_ko_nu = {
 	type = archers
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = chu_ko_nu
+		}
+	}
 	
 	damage = 30
 	toughness = 20
@@ -1129,6 +1266,12 @@ chu_ko_nu = {
 
 guanch_vaulter = {
 	type = skirmishers
+
+	can_recruit = {
+		limit_regiments = {
+			REGIMENT_TYPE = guanch_vaulter
+		}
+	}
 	
 	damage = 10
 	toughness = 12

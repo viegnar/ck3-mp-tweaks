@@ -13,7 +13,10 @@ vigmen = {
 	screen = 22
 	
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_vigmen }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_vigmen
+			REGIMENT_TYPE = vigmen
+		}
 	}
 	
 	terrain_bonus = {
@@ -49,7 +52,10 @@ bondi = {
 	screen = 0
 	
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_bondi }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_bondi
+			REGIMENT_TYPE = bondi
+		}
 	}
 	
 	terrain_bonus = {
@@ -88,7 +94,10 @@ varangian_veterans = {
 	screen = 0
 	
 	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_varangian_veterans }
+		limit_cultural_regiments = {
+			CULTURAL_PARAMETER = unlock_maa_varangian_veterans
+			REGIMENT_TYPE = varangian_veterans
+		}
 	}
 	
 	terrain_bonus = {
