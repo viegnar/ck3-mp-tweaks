@@ -12,7 +12,7 @@ innovation_zweihanders = {
 		has_cultural_pillar = heritage_central_germanic
 	}
 
-	unlock_maa = landsknecht
+	# unlock_maa = landsknecht
 
 	flag = global_regional
 	flag = global_maa
@@ -27,7 +27,7 @@ innovation_adaptive_militia = {
 		has_cultural_parameter = unlock_adaptive_militia_innovation
 	}
 
-	unlock_maa = goedendag
+	# unlock_maa = goedendag
 
 	flag = global_maa
 }
@@ -41,7 +41,7 @@ innovation_valets = {
 		has_cultural_parameter = unlock_valets_innovation
 	}
 
-	unlock_maa = gendarme
+	# unlock_maa = gendarme
 
 	flag = global_maa
 }
@@ -55,7 +55,7 @@ innovation_pike_columns = {
 		has_cultural_parameter = unlock_innovation_pike_columns
 	}
 
-	unlock_maa = picchieri
+	# unlock_maa = picchieri
 
 	flag = global_maa
 }
@@ -69,7 +69,7 @@ innovation_legionnaires = {
 		this = culture:roman
 	}
 
-	unlock_maa = praetorian
+	# unlock_maa = praetorian
 
 	flag = global_maa
 }
@@ -85,7 +85,7 @@ innovation_desert_tactics = {
 		}
 	}
 
-	unlock_maa = chasseur
+	# unlock_maa = chasseur
 
 	flag = global_maa
 }
@@ -96,7 +96,7 @@ innovation_caballeros = {
 	region = world_europe_west_iberia
 	icon = @special_maa_01
 
-	unlock_maa = caballero
+	# unlock_maa = caballero
 
 	flag = global_regional
 	flag = tribal_era_regional
@@ -108,7 +108,7 @@ innovation_hobbies = {
 	region = ghw_region_britannia
 	icon = @special_maa_02
 
-	unlock_maa = hobelar
+	# unlock_maa = hobelar
 
 	flag = global_regional
 	flag = global_maa
@@ -123,7 +123,7 @@ innovation_rectilinear_schiltron = {
 		has_cultural_parameter = unlock_schiltron_innovation
 	}
 
-	unlock_maa = schiltron
+	# unlock_maa = schiltron
 
 	flag = global_maa
 }
@@ -134,7 +134,7 @@ innovation_bamboo_bows = {
 	region = world_india
 	icon = @special_maa_02
 
-	unlock_maa = paiks
+	# unlock_maa = paiks
 
 	flag = global_regional
 	flag = global_maa
@@ -147,7 +147,7 @@ innovation_sahel_horsemen = {
 	region = custom_sahel_proper
 	icon = @special_maa_01
 
-	unlock_maa = sahel_horsemen
+	# unlock_maa = sahel_horsemen
 
 	flag = global_regional
 	flag = tribal_era_regional
@@ -162,7 +162,7 @@ innovation_sarawit = {
 		has_cultural_parameter = unlock_sarawit_innovation
 	}
 	
-	unlock_maa = sarawit
+	# unlock_maa = sarawit
 	
 	flag = global_maa
 }
@@ -176,7 +176,7 @@ innovation_repeating_crossbow = {
 		has_cultural_pillar = heritage_chinese
 	}
 	
-	unlock_maa = chu_ko_nu
+	# unlock_maa = chu_ko_nu
 	
 	flag = global_maa
 }
@@ -190,7 +190,7 @@ innovation_pole_vault = {
 		this = culture:guanches
 	}
 	
-	unlock_maa = guanch_vaulter
+	# unlock_maa = guanch_vaulter
 	
 	flag = global_maa
 }
@@ -202,7 +202,7 @@ innovation_catapult = {
 	culture_era = culture_era_tribal
 	icon = @siege_weapons
 
-	unlock_maa = onager
+	# unlock_maa = onager
 
 	flag = global_regular
 	flag = tribal_era_regular
@@ -213,7 +213,7 @@ innovation_quilted_armor = {
 	culture_era = culture_era_tribal
 	icon = @weapons_and_armor_02
 
-	unlock_maa = armored_footmen
+	# unlock_maa = armored_footmen
 
 	flag = global_regular
 	flag = tribal_era_regular
@@ -225,7 +225,7 @@ innovation_elephantry = {
 	region = world_innovation_elephants
 	icon = @elephant
 
-	unlock_maa = war_elephant
+	# unlock_maa = war_elephant
 
 	flag = global_regional
 	flag = tribal_era_regional
@@ -237,7 +237,7 @@ innovation_war_camels = {
 	region = world_innovation_camels
 	icon = @camel
 
-	unlock_maa = camel_rider
+	# unlock_maa = camel_rider
 
 	flag = global_regional
 	flag = tribal_era_regional
@@ -250,7 +250,7 @@ innovation_mangonel = {
 	culture_era = culture_era_early_medieval
 	icon = @siege_weapons
 
-	unlock_maa = mangonel
+	# unlock_maa = mangonel
 
 	flag = global_regular
 	flag = early_medieval_era_regular
@@ -261,7 +261,7 @@ innovation_arched_saddle = {
 	culture_era = culture_era_early_medieval
 	icon = @knight
 
-	unlock_maa = armored_horsemen
+	# unlock_maa = armored_horsemen
 
 	flag = global_regular
 	flag = early_medieval_era_regular
@@ -274,7 +274,7 @@ innovation_trebuchet = {
 	culture_era = culture_era_high_medieval
 	icon = @siege_weapons
 
-	unlock_maa = trebuchet
+	# unlock_maa = trebuchet
 
 	flag = global_regular
 	flag = high_medieval_era_regular
@@ -285,7 +285,7 @@ innovation_advanced_bowmaking = {
 	culture_era = culture_era_high_medieval
 	icon = @weapons_and_armor_01
 
-	unlock_maa = crossbowmen
+	# unlock_maa = crossbowmen
 	maa_upgrade = {
 		type = archers
 		damage = 3
@@ -302,5 +302,5 @@ innovation_bombard = {
 	culture_era = culture_era_late_medieval
 	icon = @siege_weapons
 
-	unlock_maa = bombard
+	# unlock_maa = bombard
 }

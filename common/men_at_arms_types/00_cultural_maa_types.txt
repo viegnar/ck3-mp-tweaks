@@ -49,7 +49,8 @@ landsknecht = {
 	type = pikemen
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_zweihanders
 			REGIMENT_TYPE = landsknecht
 		}
 	}
@@ -132,7 +133,8 @@ goedendag = {
 	type = skirmishers
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_adaptive_militia
 			REGIMENT_TYPE = goedendag
 		}
 	}
@@ -158,6 +160,13 @@ goedendag = {
 
 gendarme = {
 	type = heavy_cavalry
+
+	can_recruit = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_valets
+			REGIMENT_TYPE = gendarme
+		}
+	}
 	
 	damage = 125
 	toughness = 40
@@ -196,7 +205,8 @@ chasseur = {
 	type = light_cavalry
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_desert_tactics
 			REGIMENT_TYPE = chasseur
 		}
 	}
@@ -237,7 +247,8 @@ picchieri = {
 	type = pikemen
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_pike_columns
 			REGIMENT_TYPE = picchieri
 		}
 	}
@@ -273,7 +284,8 @@ praetorian = {
 	type = heavy_infantry
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_legionnaires
 			REGIMENT_TYPE = praetorian
 		}
 	}
@@ -300,7 +312,8 @@ caballero = {
 	type = light_cavalry
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_caballeros
 			REGIMENT_TYPE = caballero
 		}
 	}
@@ -423,7 +436,8 @@ hobelar = {
 	type = light_cavalry
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_hobbies
 			REGIMENT_TYPE = hobelar
 		}
 	}
@@ -462,7 +476,8 @@ schiltron = {
 	type = pikemen
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_rectilinear_schiltron
 			REGIMENT_TYPE = schiltron
 		}
 	}
@@ -711,7 +726,8 @@ paiks = { #Indian Footmen - carrying bows but also swords and spears.
 	type = archers
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_bamboo_bows
 			REGIMENT_TYPE = paiks
 		}
 	}
@@ -1017,7 +1033,8 @@ sahel_horsemen = {
 	type = light_cavalry
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_sahel_horsemen
 			REGIMENT_TYPE = sahel_horsemen
 		}
 	}
@@ -1094,7 +1111,8 @@ sarawit = { #AKA Ethiopian mountaineer
 	type = heavy_infantry
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_sarawit
 			REGIMENT_TYPE = sarawit
 		}
 	}
@@ -1234,7 +1252,8 @@ chu_ko_nu = {
 	type = archers
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_repeating_crossbow
 			REGIMENT_TYPE = chu_ko_nu
 		}
 	}
@@ -1268,7 +1287,8 @@ guanch_vaulter = {
 	type = skirmishers
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_pole_vault
 			REGIMENT_TYPE = guanch_vaulter
 		}
 	}

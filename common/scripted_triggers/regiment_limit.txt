@@ -25,6 +25,38 @@ limit_regiments = {
 	}
 }
 
+limit_technological_regiments = {
+	AND = {
+		culture = {
+			has_innovation = $INNOVATION$
+		}
+		OR = {
+			AND = {
+				has_game_rule = max_distinct_regiment_type_one
+				number_maa_regiments_of_type = {
+					type = $REGIMENT_TYPE$
+					value < 1
+				}
+			}
+			AND = {
+				has_game_rule = max_distinct_regiment_type_two
+				number_maa_regiments_of_type = {
+					type = $REGIMENT_TYPE$
+					value < 2
+				}
+			}
+			AND = {
+				has_game_rule = max_distinct_regiment_type_three
+				number_maa_regiments_of_type = {
+					type = $REGIMENT_TYPE$
+					value < 3
+				}
+			}
+			has_game_rule = max_distinct_regiment_type_unlimited
+		}
+	}
+}
+
 limit_cultural_regiments = {
 	AND = {
 		culture = {

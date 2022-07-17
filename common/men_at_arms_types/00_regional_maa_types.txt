@@ -7,7 +7,8 @@ camel_rider = {
 	type = camel_cavalry
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_war_camels
 			REGIMENT_TYPE = camel_cavalry
 		}
 	}
@@ -51,7 +52,8 @@ war_elephant = {
 	type = elephant_cavalry
 
 	can_recruit = {
-		limit_regiments = {
+		limit_technological_regiments = {
+			INNOVATION = innovation_elephantry
 			REGIMENT_TYPE = war_elephant
 		}
 	}
