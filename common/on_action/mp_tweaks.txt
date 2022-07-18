@@ -1,0 +1,95 @@
+#yearly_playable_pulse = {
+#	events = {
+#		mp_tweaks_domain_event.1000
+#	}
+#}
+
+on_raid_action_start = {
+	on_actions = {
+		mp_tweaks_on_raid_action_start
+	}
+}
+
+mp_tweaks_on_raid_action_start = {
+	effect = {
+		if = { # restrictions for players
+			limit = {
+				scope:raider = {
+					is_ai = no
+				}
+			}
+			# player to everyone
+			if = {
+				limit = {
+					has_game_rule = raid_restrictions_against_everyone
+				}
+
+				scope:raider = {
+					add_truce_both_ways = {
+						character = scope:barony.holder
+						days = 100
+						name = TRUCE_TRADE_DEAL
+					}
+				}
+			}
+			# player to player
+			if = {
+				limit = {
+					AND = {
+						has_game_rule = raid_restrictions_against_players
+						scope:barony.holder = {
+							is_ai = yes
+						}
+					}
+				}
+
+				scope:raider = {
+					add_truce_both_ways = {
+						character = scope:barony.holder
+						days = 100
+						name = TRUCE_TRADE_DEAL
+					}
+					trigger_event = mp_tweaks_raid_event.1000
+				}
+				scope:barony.holder = {
+					trigger_event = mp_tweaks_raid_event.1002
+				}
+			}
+		}
+		else = { # restrictions for AI
+			# ai to everyone
+			if = {
+				limit = {
+					has_game_rule = ai_raid_restrictions_against_everyone
+				}
+
+				scope:raider = {
+					add_truce_both_ways = {
+						character = scope:barony.holder
+						days = 100
+						name = TRUCE_TRADE_DEAL
+					}
+				}
+			}
+			# ai to player
+			if = {
+				limit = {
+					AND = {
+						has_game_rule = ai_raid_restrictions_against_players
+						scope:barony.holder = {
+							is_ai = no
+						}
+					}
+				}
+
+				scope:raider = {
+					add_truce_both_ways = {
+						character = scope:barony.holder
+						days = 100
+						name = TRUCE_TRADE_DEAL
+					}
+				}
+			}
+		}
+	}
+}

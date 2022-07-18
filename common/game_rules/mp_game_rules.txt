@@ -5,3 +5,17 @@ max_distinct_regiment_type = {
 	max_distinct_regiment_type_two = {}
 	max_distinct_regiment_type_three = {}
 }
+
+raid_restrictions = {
+	default = raid_restrictions_default
+	raid_restrictions_default = {}
+	raid_restrictions_against_players = {}
+	raid_restrictions_against_everyone = {}
+}
+
+ai_raid_restrictions = {
+	default = ai_raid_restrictions_default
+	ai_raid_restrictions_default = {}
+	ai_raid_restrictions_against_players = {}
+	ai_raid_restrictions_against_everyone = {}
+}

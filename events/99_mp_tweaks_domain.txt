@@ -1,6 +1,6 @@
-namespace = domain_rule
+namespace = mp_tweaks_domain_event
 
-domain_rule.1 = { # Primary title dışında toprak tutma (kontrol)
+mp_tweaks_domain_event.1000 = { # Primary title dışında toprak tutma (kontrol)
 	type = character_event
   hidden = yes
 	trigger = {
@@ -20,16 +20,16 @@ domain_rule.1 = { # Primary title dışında toprak tutma (kontrol)
 			add_to_list = NAME
 			save_scope_as = domain
 			every_player = {
-				trigger_event = domain_rule.1.2
+				trigger_event = mp_tweaks_domain_event.1001
 			}
 		}
 	}
 }
 
-domain_rule.1.2 = { # Primary title dışında toprak tutma (gösterim)
+mp_tweaks_domain_event.1001 = { # Primary title dışında toprak tutma (gösterim)
 	type = character_event
-	title = domain_rule.1.2.title
-	desc = domain_rule.1.2.desc
+	title = mp_tweaks_domain_event.1001.title
+	desc = mp_tweaks_domain_event.1001.desc
 	theme = abduct_scheme
 	override_background = gallows
 	override_icon = {
@@ -44,6 +44,6 @@ domain_rule.1.2 = { # Primary title dışında toprak tutma (gösterim)
 		animation = disapproval
 	}
 	option = {
-		name = domain_rule.1.2.option
+		name = mp_tweaks_domain_event.1001.option
 	}
 }

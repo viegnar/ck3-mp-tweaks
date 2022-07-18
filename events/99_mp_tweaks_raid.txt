@@ -1,0 +1,59 @@
+namespace = mp_tweaks_raid_event
+
+mp_tweaks_raid_event.1000 = {
+	type = character_event
+	title = mp_tweaks_raid_event.title
+	desc = mp_tweaks_raid_event.desc
+	theme = abduct_scheme
+	override_background = burning_building
+	override_icon = {
+		reference = "gfx/interface/icons/event_types/type_intimidation.dds"
+	}
+	left_portrait = {
+		character = scope:barony.holder
+		animation = rage
+	}
+	right_portrait = {
+		character = scope:raider
+		animation = shame
+	}
+	option = {
+		name = mp_tweaks_raid_event.option
+		show_as_tooltip = {
+			add_truce_both_ways = {
+				character = scope:barony.holder
+				days = 100
+				name = TRUCE_TRADE_DEAL
+			}
+		}
+	}
+}
+
+mp_tweaks_raid_event.1002 = {
+	type = character_event
+	title = mp_tweaks_raid_event.title
+	desc = mp_tweaks_raid_event.desc
+	theme = abduct_scheme
+	override_background = burning_building
+	override_icon = {
+		reference = "gfx/interface/icons/event_types/type_intimidation.dds"
+	}
+	left_portrait = {
+		character = scope:barony.holder
+		animation = rage
+	}
+	right_portrait = {
+		character = scope:raider
+		animation = shame
+	}
+	option = {
+		name = mp_tweaks_raid_event.option
+		show_as_tooltip = {
+			add_truce_both_ways = {
+				character = scope:raider
+				days = 100
+				name = TRUCE_TRADE_DEAL
+			}
+		}
+	}
+}

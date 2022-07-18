@@ -1,5 +1,5 @@
 ﻿l_english:
-  rule_max_distinct_regiment_type: "#X MP Tweaks:#! Düzenli Asker Limiti"
+  rule_max_distinct_regiment_type: "#X MP Tweaks:#! Düzenli asker limiti"
   setting_max_distinct_regiment_type_unlimited: "Kapalı"
   setting_max_distinct_regiment_type_unlimited_desc: "Hiç bir kısıtlama yok."
   setting_max_distinct_regiment_type_one: "1"
@@ -8,6 +8,22 @@
   setting_max_distinct_regiment_type_two_desc: "Oyuncular bir düzenli asker türünden en fazla 2 adet yaratabilir."
   setting_max_distinct_regiment_type_three: "3"
   setting_max_distinct_regiment_type_three_desc: "Oyuncular bir düzenli asker türünden en fazla 3 adet yaratabilir."
+
+  rule_raid_restrictions: "#X MP Tweaks:#! Yağma kısıtlamaları"
+  setting_raid_restrictions_default: "Varsayılan"
+  setting_raid_restrictions_default_desc: "Oyuncular herkesi yağmalayabilir."
+  setting_raid_restrictions_against_players: "Oyunculara karşı"
+  setting_raid_restrictions_against_players_desc: "Oyuncular diğer oyuncuları yağmalayamaz."
+  setting_raid_restrictions_against_everyone: "Tamamen"
+  setting_raid_restrictions_against_everyone_desc: "Oyuncular hiç kimseyi yağmalayamaz."
+
+  rule_ai_raid_restrictions: "#X MP Tweaks:#! Yağma kısıtlamaları (AI)"
+  setting_ai_raid_restrictions_default: "Varsayılan"
+  setting_ai_raid_restrictions_default_desc: "AI karakterler herkesi yağmalayabilir."
+  setting_ai_raid_restrictions_against_players: "Oyunculara karşı"
+  setting_ai_raid_restrictions_against_players_desc: "AI karakterler oyuncuları yağmalayamaz."
+  setting_ai_raid_restrictions_against_everyone: "Tamamen"
+  setting_ai_raid_restrictions_against_everyone_desc: "AI karakterler hiç kimseyi yağmalayamaz."
 
   offer_vassalization_debuff_from_server_rules:0 "Sunucu kuralları: $VALUE|=+0$"
 
@@ -19,6 +35,10 @@
 
   server_rules_about_vassal_claim_liege_title:0 "Sunucu kuralları"
 
-  domain_rule.1.2.title:0 "Birincil ünvan dışında toprak tutma"
-  domain_rule.1.2.desc:0 "[cheater.GetFirstName] aşağıdaki toprakları tutarak bu kuralı çiğniyor:\n\n[domain.GetName]"
-  domain_rule.1.2.option:0 "Kendisini kınıyorum."
+  mp_tweaks_domain_event.1001.title:0 "Birincil ünvan dışında toprak tutma"
+  mp_tweaks_domain_event.1001.desc:0 "[cheater.GetFirstName] aşağıdaki toprakları tutarak bu kuralı çiğniyor:\n\n[domain.GetName]"
+  mp_tweaks_domain_event.1001.option:0 "Kendisini kınıyorum"
+
+  mp_tweaks_raid_event.title:0 "Oyuncu mülkü yağmalama"
+  mp_tweaks_raid_event.desc:0 "[raider.GetFirstName] bir oyuncu mülkünü yağmalıyor:\n\n[barony.GetName]"
+  mp_tweaks_raid_event.option:0 "Anladım"
