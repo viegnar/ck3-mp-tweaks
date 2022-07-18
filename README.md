@@ -6,7 +6,7 @@ Balance tweaks for community multiplayer games (according to the server rules)
 
 ### <img src="https://ck3.paradoxwikis.com/images/b/b0/Trait_diplomat.png" alt="diplomat" width="32"/> <sup>Diplomacy</sup>
 
-* Vassalization acceptance has been lowered against AI characters
+* Some extra vassalization acceptance difficulty can be added from the game rules
 
 ### <img src="https://ck3.paradoxwikis.com/images/6/6c/Trait_architect.png" alt="architect" width="32"/> <sup>Domain</sup>
 
