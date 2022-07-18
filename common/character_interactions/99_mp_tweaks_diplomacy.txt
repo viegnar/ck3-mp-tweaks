@@ -505,16 +505,28 @@ offer_vassalization_interaction = {
 
 		# added by viegnar
 		modifier = {
-			desc = offer_vassalization_debuff_from_server_rules
 			trigger = {
-				scope:actor = {
-					is_ai = no
-				}
-				scope:recipient = {
-					is_ai = yes
-				}
+				scope:actor = { is_ai = no }
+				has_game_rule = offer_vassalization_difficulty_hard
 			}
-			add = -100
+			desc = game_rule_modifier_offer_vassalization_difficulty_hard
+			add = -25
+		}
+		modifier = {
+			trigger = {
+				scope:actor = { is_ai = no }
+				has_game_rule = offer_vassalization_difficulty_very_hard
+			}
+			desc = game_rule_modifier_offer_vassalization_difficulty_very_hard
+			add = -50
+		}
+		modifier = {
+			trigger = {
+				scope:actor = { is_ai = no }
+				has_game_rule = offer_vassalization_difficulty_impossible
+			}
+			desc = game_rule_modifier_offer_vassalization_difficulty_impossible
+			add = -1000
 		}
 	}
 

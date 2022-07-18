@@ -1,4 +1,18 @@
 ﻿l_english:
+  rule_offer_vassalization_difficulty: "#X MP Tweaks:#! Vasallık teklifi zorluğu"
+  setting_offer_vassalization_difficulty_default: "Varsayılan"
+  setting_offer_vassalization_difficulty_default_desc: "Hiç bir değişiklik yok."
+  setting_offer_vassalization_difficulty_hard: "Zor"
+  setting_offer_vassalization_difficulty_hard_desc: "Zorlaştırılmış vasallık teklifi. (-25)"
+  setting_offer_vassalization_difficulty_very_hard: "Çok zor"
+  setting_offer_vassalization_difficulty_very_hard_desc: "Çok daha zorlaştırılmış vasallık teklifi. (-50)"
+  setting_offer_vassalization_difficulty_impossible: "İmkansız"
+  setting_offer_vassalization_difficulty_impossible_desc: "AI karakterler vasallık tekliflerini hiçbir zaman kabul etmez. (-1000)"
+
+  game_rule_modifier_offer_vassalization_difficulty_hard:0 "Oyun kuralları (Zor vasallık teklifi): $VALUE|=+0$"
+  game_rule_modifier_offer_vassalization_difficulty_very_hard:0 "Oyun kuralları (Çok zor vasallık teklifi): $VALUE|=+0$"
+  game_rule_modifier_offer_vassalization_difficulty_impossible:0 "Oyun kuralları (İmkansız vasallık teklifi): $VALUE|=+0$"
+
   rule_max_distinct_regiment_type: "#X MP Tweaks:#! Düzenli asker limiti"
   setting_max_distinct_regiment_type_unlimited: "Kapalı"
   setting_max_distinct_regiment_type_unlimited_desc: "Hiç bir kısıtlama yok."
@@ -12,7 +26,7 @@
   rule_raid_restrictions: "#X MP Tweaks:#! Yağma kısıtlamaları"
   setting_raid_restrictions_default: "Varsayılan"
   setting_raid_restrictions_default_desc: "Oyuncular herkesi yağmalayabilir."
-  setting_raid_restrictions_against_players: "Oyunculara karşı"
+  setting_raid_restrictions_against_players: "Oyunculara Karşı"
   setting_raid_restrictions_against_players_desc: "Oyuncular diğer oyuncuları yağmalayamaz."
   setting_raid_restrictions_against_everyone: "Tamamen"
   setting_raid_restrictions_against_everyone_desc: "Oyuncular hiç kimseyi yağmalayamaz."
@@ -20,12 +34,10 @@
   rule_ai_raid_restrictions: "#X MP Tweaks:#! Yağma kısıtlamaları (AI)"
   setting_ai_raid_restrictions_default: "Varsayılan"
   setting_ai_raid_restrictions_default_desc: "AI karakterler herkesi yağmalayabilir."
-  setting_ai_raid_restrictions_against_players: "Oyunculara karşı"
+  setting_ai_raid_restrictions_against_players: "Oyunculara Karşı"
   setting_ai_raid_restrictions_against_players_desc: "AI karakterler oyuncuları yağmalayamaz."
   setting_ai_raid_restrictions_against_everyone: "Tamamen"
   setting_ai_raid_restrictions_against_everyone_desc: "AI karakterler hiç kimseyi yağmalayamaz."
-
-  offer_vassalization_debuff_from_server_rules:0 "Sunucu kuralları: $VALUE|=+0$"
 
   faith_creation_cost_ruleset_impact:0 "Sunucu kuralları"
 

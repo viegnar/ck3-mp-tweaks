@@ -1,3 +1,11 @@
+offer_vassalization_difficulty = {
+	default = offer_vassalization_difficulty_default
+	offer_vassalization_difficulty_default = {}
+	offer_vassalization_difficulty_hard = {}
+	offer_vassalization_difficulty_very_hard = {}
+	offer_vassalization_difficulty_impossible = {}
+}
+
 max_distinct_regiment_type = {
 	default = max_distinct_regiment_type_unlimited
 	max_distinct_regiment_type_unlimited = {}
