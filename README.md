@@ -16,6 +16,10 @@ Balance tweaks for community multiplayer games (according to the server rules)
 
 * A game rule to limit same type regiment units (1/2/3/unlimited)
 
+### <img src="https://ck3.paradoxwikis.com/images/4/46/Trait_one_eyed.png" alt="architect" width="32"/> <sup>Raid</sup>
+
+* Ability to restricts raids for AI and players with game rules
+
 ### <img src="https://ck3.paradoxwikis.com/images/5/5c/Trait_theologian.png" alt="theologian" width="32"/> <sup>Religion</sup>
 
 * Disabled religion reforming for abrahamic and norse religions
