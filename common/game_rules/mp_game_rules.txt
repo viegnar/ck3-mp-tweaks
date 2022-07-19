@@ -27,3 +27,35 @@ ai_raid_restrictions = {
 	ai_raid_restrictions_against_players = {}
 	ai_raid_restrictions_against_everyone = {}
 }
+
+reform_religion_difficulty_abrahamic = {
+	default = reform_religion_difficulty_abrahamic_default
+	reform_religion_difficulty_abrahamic_easy = {}
+	reform_religion_difficulty_abrahamic_default = {}
+	reform_religion_difficulty_abrahamic_hard = {}
+	reform_religion_difficulty_abrahamic_impossible = {}
+}
+
+reform_religion_difficulty_norse = {
+	default = reform_religion_difficulty_norse_default
+	reform_religion_difficulty_norse_easy = {}
+	reform_religion_difficulty_norse_default = {}
+	reform_religion_difficulty_norse_hard = {}
+	reform_religion_difficulty_norse_impossible = {}
+}
+
+reform_religion_difficulty_eastern = {
+	default = reform_religion_difficulty_eastern_default
+	reform_religion_difficulty_eastern_easy = {}
+	reform_religion_difficulty_eastern_default = {}
+	reform_religion_difficulty_eastern_hard = {}
+	reform_religion_difficulty_eastern_impossible = {}
+}
+
+reform_religion_difficulty_pagan = {
+	default = reform_religion_difficulty_pagan_default
+	reform_religion_difficulty_pagan_easy = {}
+	reform_religion_difficulty_pagan_default = {}
+	reform_religion_difficulty_pagan_hard = {}
+	reform_religion_difficulty_pagan_impossible = {}
+}

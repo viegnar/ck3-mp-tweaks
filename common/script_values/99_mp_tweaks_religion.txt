@@ -3,24 +3,123 @@
 # scope:character = the creation character
 # scope:old_faith = the faith the character is converting from
 faith_creation_cost_mult = {
-	if = {
-		limit = {
-			OR = {
-				scope:old_faith.religion = religion:germanic_religion
-				scope:old_faith.religion = religion:christianity_religion
-				scope:old_faith.religion = religion:islam_religion
-				scope:old_faith.religion = religion:judaism_religion
-			}
-		}
-		add = {
-			value = 1000
-			desc = "faith_creation_cost_ruleset_impact"
-			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
-		}
-	}
 	subtract = {
 		value = scope:old_faith.faith_conversion_fervor_mult
 		desc = "faith_creation_cost_fervor_impact"
 		format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+	}
+	if = { # easy
+		limit = {
+			OR = {
+				AND = { # abrahamic
+					scope:old_faith.religion = {
+						is_in_family = rf_abrahamic
+					}
+					has_game_rule = reform_religion_difficulty_abrahamic_easy
+				}
+				AND = { # norse
+					scope:old_faith.religion = religion:germanic_religion
+					has_game_rule = reform_religion_difficulty_norse_easy
+				}
+				AND = { # eastern
+					scope:old_faith.religion = {
+						is_in_family = rf_eastern
+					}
+					has_game_rule = reform_religion_difficulty_eastern_easy
+				}
+				AND = { # pagan
+					NOT = {
+						scope:old_faith.religion = religion:germanic_religion
+					}
+					scope:old_faith.religion = {
+						is_in_family = rf_pagan
+					}
+					has_game_rule = reform_religion_difficulty_pagan_easy
+				}
+			}
+		}
+		subtract = {
+			value = {
+				add = 0.5
+				subtract = {
+					add = scope:old_faith.faith_conversion_fervor_mult
+					divide = 2
+				}
+			}
+			desc = "faith_creation_cost_game_rules_impact"
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+		}
+	}
+	if = { # hard
+		limit = {
+			OR = {
+				AND = { # abrahamic
+					scope:old_faith.religion = {
+						is_in_family = rf_abrahamic
+					}
+					has_game_rule = reform_religion_difficulty_abrahamic_hard
+				}
+				AND = { # norse
+					scope:old_faith.religion = religion:germanic_religion
+					has_game_rule = reform_religion_difficulty_norse_hard
+				}
+				AND = { # eastern
+					scope:old_faith.religion = {
+						is_in_family = rf_eastern
+					}
+					has_game_rule = reform_religion_difficulty_eastern_hard
+				}
+				AND = { # pagan
+					NOT = {
+						scope:old_faith.religion = religion:germanic_religion
+					}
+					scope:old_faith.religion = {
+						is_in_family = rf_pagan
+					}
+					has_game_rule = reform_religion_difficulty_pagan_hard
+				}
+			}
+		}
+		add = {
+			value = 0.5
+			desc = "faith_creation_cost_game_rules_impact"
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+		}
+	}
+	if = { # impossible
+		limit = {
+			OR = {
+				AND = { # abrahamic
+					scope:old_faith.religion = {
+						is_in_family = rf_abrahamic
+					}
+					has_game_rule = reform_religion_difficulty_abrahamic_impossible
+				}
+				AND = { # norse
+					scope:old_faith.religion = religion:germanic_religion
+					has_game_rule = reform_religion_difficulty_norse_impossible
+				}
+				AND = { # eastern
+					scope:old_faith.religion = {
+						is_in_family = rf_eastern
+					}
+					has_game_rule = reform_religion_difficulty_eastern_impossible
+				}
+				AND = { # pagan
+					NOT = {
+						scope:old_faith.religion = religion:germanic_religion
+					}
+					scope:old_faith.religion = {
+						is_in_family = rf_pagan
+					}
+					has_game_rule = reform_religion_difficulty_pagan_impossible
+				}
+			}
+		}
+		add = {
+			value = 1000
+			desc = "faith_creation_cost_game_rules_impact"
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+		}
 	}
 }
