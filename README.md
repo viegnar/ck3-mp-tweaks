@@ -22,7 +22,7 @@ Balance tweaks for community multiplayer games (according to the server rules)
 
 ### <img src="https://ck3.paradoxwikis.com/images/5/5c/Trait_theologian.png" alt="theologian" width="32"/> <sup>Religion</sup>
 
-* Disabled religion reforming for abrahamic and norse religions
+* Added reformation difficulty settings to game rules for each religion family
 
 ### <img src="https://ck3.paradoxwikis.com/images/d/d5/Trait_scholar.png" alt="scholar" width="32"/> <sup>Claim</sup>
 
