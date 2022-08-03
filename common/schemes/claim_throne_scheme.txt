@@ -129,6 +129,7 @@ claim_throne = {
 			scope:owner = {
 				is_ai = no
 			}
+			has_game_rule = claim_throne_scheme_is_restricted
 		}
 	}
 	

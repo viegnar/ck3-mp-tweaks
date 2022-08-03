@@ -107,6 +107,18 @@
   setting_buy_claim_difficulty_impossible: "İmkansız"
   setting_buy_claim_difficulty_impossible_desc: "Hak iddiası satın alma (Onaylanmış Açıklar) imkansızlaşır."
 
+  rule_claim_throne_scheme_allowance: "#X MP Tweaks:#! [GetPerk('meritocracy_perk').GetName(GetPlayer)]"
+  setting_claim_throne_scheme_is_allowed: "Açık"
+  setting_claim_throne_scheme_is_allowed_desc: "Hiçbir değişiklik yok."
+  setting_claim_throne_scheme_is_restricted: "Kapalı"
+  setting_claim_throne_scheme_is_restricted_desc: "[GetScheme('claim_throne').GetTypeName|LV] kullanılamaz."
+
+  rule_claim_liege_title_allowance: "#X MP Tweaks:#! $vassal_claim_liege_title_interaction$"
+  setting_claim_liege_title_is_allowed: "Açık"
+  setting_claim_liege_title_is_allowed_desc: "Hiçbir değişiklik yok."
+  setting_claim_liege_title_is_restricted: "Kapalı"
+  setting_claim_liege_title_is_restricted_desc: "$vassal_claim_liege_title_interaction$ [Concept('interaction', 'etkileşimi')|E] kullanılamaz."
+
   rule_schemer_needs_perk: "#X MP Tweaks:#! [GetTrait('schemer').GetName(GetPlayer)|LV] zorunluluğu"
   setting_schemer_needs_perk_off: "Kapalı"
   setting_schemer_needs_perk_off_desc: "Hiçbir değişiklik yok."
