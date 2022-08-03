@@ -295,9 +295,20 @@ murder = {
 	
 	minimum_progress_chance = 10
 	maximum_progress_chance = 90
-	minimum_success = 5
+	# minimum_success = 5
 	maximum_secrecy = 95
 	maximum_success = 95
+
+	# added by viegnar
+	if = {
+		limit = {
+			has_game_rule = schemer_needs_perk_on
+		}
+		minimum_success = 0
+	}
+	else = {
+		minimum_success = 5
+	}
 	
 	success_desc = "MURDER_SUCCESS_DESC"
 	discovery_desc = "MURDER_DISCOVERY_DESC"

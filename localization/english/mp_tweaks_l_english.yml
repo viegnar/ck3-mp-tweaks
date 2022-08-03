@@ -107,9 +107,15 @@
   setting_buy_claim_difficulty_impossible: "İmkansız"
   setting_buy_claim_difficulty_impossible_desc: "Hak iddiası satın alma (Onaylanmış Açıklar) imkansızlaşır."
 
+  rule_schemer_needs_perk: "#X MP Tweaks:#! [GetTrait('schemer').GetName(GetPlayer)|LV] zorunluluğu"
+  setting_schemer_needs_perk_off: "Kapalı"
+  setting_schemer_needs_perk_off_desc: "Hiçbir değişiklik yok."
+  setting_schemer_needs_perk_on: "Açık"
+  setting_schemer_needs_perk_on_desc: "[GetTrait('schemer').GetName(GetPlayer)|LV] olmayan oyuncular, diğer oyunculara karşı entrika yapamaz."
+
   faith_creation_cost_game_rules_impact:0 "Oyun kuralları"
 
-  SERVER_RULES_ABOUT_SCHEMER_TRAIT_FOR_HOSTILE_SCHEMES:0 "[GetTrait('schemer').GetName(GetPlayer)|LV] değilsiniz: $VALUE|0=+%/$"
+  SERVER_RULES_ABOUT_SCHEMER_TRAIT_FOR_HOSTILE_SCHEMES: "[GetTrait('schemer').GetName(GetPlayer)|LV] değilsiniz: $VALUE|0=+%/$"
 
   SERVER_RULES_ABOUT_CLAIM_THRONE_SCHEME:0 "Sunucu kuralları: $VALUE|=+0$"
 

@@ -82,3 +82,9 @@ buy_claim_difficulty = {
 	buy_claim_difficulty_hard = {}
 	buy_claim_difficulty_impossible = {}
 }
+
+schemer_needs_perk = {
+	default = schemer_needs_perk_off
+	schemer_needs_perk_off = {}
+	schemer_needs_perk_on = {}
+}

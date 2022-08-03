@@ -214,9 +214,10 @@ hostile_scheme_base_chance_modifier = {
 
 	# added by viegnar
 	modifier = {
+		has_game_rule = schemer_needs_perk_on
 		scope:owner = {
-			is_ai = no
 			NOR = {
+				is_ai = yes
 				has_trait = schemer
 			}
 		}
