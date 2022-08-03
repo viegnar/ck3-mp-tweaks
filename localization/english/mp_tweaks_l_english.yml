@@ -129,9 +129,9 @@
 
   SERVER_RULES_ABOUT_SCHEMER_TRAIT_FOR_HOSTILE_SCHEMES: "[GetTrait('schemer').GetName(GetPlayer)|LV] değilsiniz: $VALUE|0=+%/$"
 
-  SERVER_RULES_ABOUT_CLAIM_THRONE_SCHEME: "Sunucu kuralları: $VALUE|=+0$"
+  SERVER_RULES_ABOUT_CLAIM_THRONE_SCHEME: "Oyun kuralları: $VALUE|=+0$"
 
-  server_rules_about_vassal_claim_liege_title: "Sunucu kuralları"
+  server_rules_about_vassal_claim_liege_title: "Oyun kuralları"
 
   mp_tweaks_domain_event.1001.title: "Birincil ünvan dışında toprak tutma"
   mp_tweaks_domain_event.1001.desc: "[cheater.GetFirstName] aşağıdaki toprakları tutarak bu kuralı çiğniyor:\n\n[domain.GetName]"
