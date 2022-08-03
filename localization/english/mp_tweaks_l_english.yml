@@ -91,6 +91,22 @@
   setting_reform_religion_difficulty_pagan_impossible: "İmkansız"
   setting_reform_religion_difficulty_pagan_impossible_desc: "Pagan dinleri reform etmek imkansızlaşır."
 
+  rule_ask_for_claim_difficulty: "#X MP Tweaks:#! Hak i̇ddiası i̇steme"
+  setting_ask_for_claim_difficulty_default: "Varsayılan"
+  setting_ask_for_claim_difficulty_default_desc: "Hiçbir değişiklik yok."
+  setting_ask_for_claim_difficulty_hard: "Zor"
+  setting_ask_for_claim_difficulty_hard_desc: "Mezhep liderinden hak iddiası isteme 2 katı zorlaşır."
+  setting_ask_for_claim_difficulty_impossible: "İmkansız"
+  setting_ask_for_claim_difficulty_impossible_desc: "Mezhep liderinden hak iddiası isteme imkansızlaşır."
+
+  rule_buy_claim_difficulty: "#X MP Tweaks:#! Hak i̇ddiası satın alma"
+  setting_buy_claim_difficulty_default: "Varsayılan"
+  setting_buy_claim_difficulty_default_desc: "Hiçbir değişiklik yok."
+  setting_buy_claim_difficulty_hard: "Zor"
+  setting_buy_claim_difficulty_hard_desc: "Hak iddiası satın alma (Onaylanmış Açıklar) 2 katı zorlaşır."
+  setting_buy_claim_difficulty_impossible: "İmkansız"
+  setting_buy_claim_difficulty_impossible_desc: "Hak iddiası satın alma (Onaylanmış Açıklar) imkansızlaşır."
+
   faith_creation_cost_game_rules_impact:0 "Oyun kuralları"
 
   SERVER_RULES_ABOUT_SCHEMER_TRAIT_FOR_HOSTILE_SCHEMES:0 "[GetTrait('schemer').GetName(GetPlayer)|LV] değilsiniz: $VALUE|0=+%/$"

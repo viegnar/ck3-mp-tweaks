@@ -68,3 +68,17 @@ reform_religion_difficulty_pagan = {
 	reform_religion_difficulty_pagan_hard = {}
 	reform_religion_difficulty_pagan_impossible = {}
 }
+
+ask_for_claim_difficulty = {
+	default = ask_for_claim_difficulty_default
+	ask_for_claim_difficulty_default = {}
+	ask_for_claim_difficulty_hard = {}
+	ask_for_claim_difficulty_impossible = {}
+}
+
+buy_claim_difficulty = {
+	default = buy_claim_difficulty_default
+	buy_claim_difficulty_default = {}
+	buy_claim_difficulty_hard = {}
+	buy_claim_difficulty_impossible = {}
+}

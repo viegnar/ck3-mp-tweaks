@@ -32,9 +32,15 @@ claim_piety_value = {
 		# added by viegnar
 		if = {
 			limit = {
-				scope:actor = {
-					is_ai = no
-				}
+				scope:actor = { is_ai = no }
+				has_game_rule = ask_for_claim_difficulty_hard
+			}
+			multiply = 2
+		}
+		if = {
+			limit = {
+				scope:actor = { is_ai = no }
+				has_game_rule = ask_for_claim_difficulty_impossible
 			}
 			multiply = 1000
 		}
@@ -49,7 +55,24 @@ claim_piety_value = {
 # Sanctioned Loopholes
 minor_buy_claim_piety_value = {
 	value = minor_piety_value
-	multiply = 2500
+	if = {
+		limit = {
+			has_game_rule = buy_claim_difficulty_default
+		}
+		multiply = 5
+	}
+	if = {
+		limit = {
+			has_game_rule = buy_claim_difficulty_hard
+		}
+		multiply = 10
+	}
+	if = {
+		limit = {
+			has_game_rule = buy_claim_difficulty_impossible
+		}
+		multiply = 2500
+	}
 }
 medium_buy_claim_piety_value = {
 	value = minor_buy_claim_piety_value
