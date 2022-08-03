@@ -1,4 +1,16 @@
 ﻿l_english:
+  rule_title_integration_speed: "#X MP Tweaks:#! Unvan bütünleştirme hızı"
+  setting_title_integration_speed_slow: "Yavaş"
+  setting_title_integration_speed_slow_desc: "Şansölyenin diplomasi becerisinin, ünvan bütünleştirme hızına etkisi 50% azalır."
+  setting_title_integration_speed_default: "Varsayılan"
+  setting_title_integration_speed_default_desc: "Hiçbir değişiklik yok."
+  setting_title_integration_speed_fast: "Hızlı"
+  setting_title_integration_speed_fast_desc: "Şansölyenin diplomasi becerisinin, ünvan bütünleştirme hızına etkisi 2 kat artar."
+  setting_title_integration_speed_faster: "Çok Hızlı"
+  setting_title_integration_speed_faster_desc: "Şansölyenin diplomasi becerisinin, ünvan bütünleştirme hızına etkisi 3 kat artar."
+  setting_title_integration_speed_fastest: "Aşırı Hızlı"
+  setting_title_integration_speed_fastest_desc: "Şansölyenin diplomasi becerisinin, ünvan bütünleştirme hızına etkisi 5 kat artar."
+
   rule_offer_vassalization_difficulty: "#X MP Tweaks:#! Vasallık teklifi zorluğu"
   setting_offer_vassalization_difficulty_default: "Varsayılan"
   setting_offer_vassalization_difficulty_default_desc: "Hiçbir değişiklik yok."

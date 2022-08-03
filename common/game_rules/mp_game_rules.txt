@@ -1,3 +1,12 @@
+title_integration_speed = {
+	default = title_integration_speed_default
+	title_integration_speed_slow = {}
+	title_integration_speed_default = {}
+	title_integration_speed_fast = {}
+	title_integration_speed_faster = {}
+	title_integration_speed_fastest = {}
+}
+
 offer_vassalization_difficulty = {
 	default = offer_vassalization_difficulty_default
 	offer_vassalization_difficulty_default = {}

@@ -284,9 +284,40 @@ chancellor_integrate_title_current_progress = {
 	}
 }
 
+# updated by viegnar
+
 chancellor_integrate_title_progress_gain = {
 	add = diplomacy
-	multiply = 0.035
+	if = {
+		limit = {
+			has_game_rule = title_integration_speed_slow
+		}
+		multiply = 0.0175
+	}
+	if = {
+		limit = {
+			has_game_rule = title_integration_speed_default
+		}
+		multiply = 0.035
+	}
+	if = {
+		limit = {
+			has_game_rule = title_integration_speed_fast
+		}
+		multiply = 0.07
+	}
+	if = {
+		limit = {
+			has_game_rule = title_integration_speed_faster
+		}
+		multiply = 0.1
+	}
+	if = {
+		limit = {
+			has_game_rule = title_integration_speed_fastest
+		}
+		multiply = 0.175
+	}
 }
 
 chancellor_integrate_title_erudition_bonus = {
