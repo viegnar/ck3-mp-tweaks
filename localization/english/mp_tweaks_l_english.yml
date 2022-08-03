@@ -21,9 +21,9 @@
   setting_offer_vassalization_difficulty_impossible: "İmkansız"
   setting_offer_vassalization_difficulty_impossible_desc: "AI karakterler vasallık tekliflerini hiçbir zaman kabul etmez. (-1000)"
 
-  game_rule_modifier_offer_vassalization_difficulty_hard:0 "Oyun kuralları (Zor vasallık teklifi): $VALUE|=+0$"
-  game_rule_modifier_offer_vassalization_difficulty_very_hard:0 "Oyun kuralları (Çok zor vasallık teklifi): $VALUE|=+0$"
-  game_rule_modifier_offer_vassalization_difficulty_impossible:0 "Oyun kuralları (İmkansız vasallık teklifi): $VALUE|=+0$"
+  game_rule_modifier_offer_vassalization_difficulty_hard: "Oyun kuralları (Zor vasallık teklifi): $VALUE|=+0$"
+  game_rule_modifier_offer_vassalization_difficulty_very_hard: "Oyun kuralları (Çok zor vasallık teklifi): $VALUE|=+0$"
+  game_rule_modifier_offer_vassalization_difficulty_impossible: "Oyun kuralları (İmkansız vasallık teklifi): $VALUE|=+0$"
 
   rule_max_distinct_regiment_type: "#X MP Tweaks:#! Düzenli asker limiti"
   setting_max_distinct_regiment_type_unlimited: "Kapalı"
@@ -125,18 +125,18 @@
   setting_schemer_needs_perk_on: "Açık"
   setting_schemer_needs_perk_on_desc: "[GetTrait('schemer').GetName(GetPlayer)|LV] olmayan oyuncular, diğer oyunculara karşı entrika yapamaz."
 
-  faith_creation_cost_game_rules_impact:0 "Oyun kuralları"
+  faith_creation_cost_game_rules_impact: "Oyun kuralları"
 
   SERVER_RULES_ABOUT_SCHEMER_TRAIT_FOR_HOSTILE_SCHEMES: "[GetTrait('schemer').GetName(GetPlayer)|LV] değilsiniz: $VALUE|0=+%/$"
 
-  SERVER_RULES_ABOUT_CLAIM_THRONE_SCHEME:0 "Sunucu kuralları: $VALUE|=+0$"
+  SERVER_RULES_ABOUT_CLAIM_THRONE_SCHEME: "Sunucu kuralları: $VALUE|=+0$"
 
-  server_rules_about_vassal_claim_liege_title:0 "Sunucu kuralları"
+  server_rules_about_vassal_claim_liege_title: "Sunucu kuralları"
 
-  mp_tweaks_domain_event.1001.title:0 "Birincil ünvan dışında toprak tutma"
-  mp_tweaks_domain_event.1001.desc:0 "[cheater.GetFirstName] aşağıdaki toprakları tutarak bu kuralı çiğniyor:\n\n[domain.GetName]"
-  mp_tweaks_domain_event.1001.option:0 "Kendisini kınıyorum"
+  mp_tweaks_domain_event.1001.title: "Birincil ünvan dışında toprak tutma"
+  mp_tweaks_domain_event.1001.desc: "[cheater.GetFirstName] aşağıdaki toprakları tutarak bu kuralı çiğniyor:\n\n[domain.GetName]"
+  mp_tweaks_domain_event.1001.option: "Kendisini kınıyorum"
 
-  mp_tweaks_raid_event.title:0 "Oyuncu mülkü yağmalama"
-  mp_tweaks_raid_event.desc:0 "[raider.GetFirstName] bir oyuncu mülkünü yağmalıyor:\n\n[barony.GetName]"
-  mp_tweaks_raid_event.option:0 "Anladım"
+  mp_tweaks_raid_event.title: "Oyuncu mülkü yağmalama"
+  mp_tweaks_raid_event.desc: "[raider.GetFirstName] bir oyuncu mülkünü yağmalıyor:\n\n[barony.GetName]"
+  mp_tweaks_raid_event.option: "Anladım"
