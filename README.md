@@ -7,7 +7,6 @@ Balance tweaks for community multiplayer games (according to the server rules)
 ### <img src="https://ck3.paradoxwikis.com/images/b/b0/Trait_diplomat.png" alt="diplomat" width="32"/> <sup>Diplomacy</sup>
 
 * Some extra vassalization acceptance difficulty can be added from the game rules
-* Diplomacy skill impact of chancellor on title integration can be increased from the game rules
 
 ### <img src="https://ck3.paradoxwikis.com/images/6/6c/Trait_architect.png" alt="architect" width="32"/> <sup>Domain</sup>
 
@@ -38,3 +37,8 @@ Balance tweaks for community multiplayer games (according to the server rules)
 ### <img src="https://ck3.paradoxwikis.com/images/0/0c/Trait_bastard_founder.png" alt="bastard_founder" width="32"/> <sup>Vassal</sup>
 
 * Claim liege title can be disabled from the game rules
+
+### <img src="https://ck3.paradoxwikis.com/images/7/7e/Trait_augustus.png" alt="bastard_founder" width="32"/> <sup>Council</sup>
+
+* Diplomacy skill impact of chancellor on title integration task can be increased from the game rules
+* Martial skill impact of Marshal on control increase task can be increased from the game rules
