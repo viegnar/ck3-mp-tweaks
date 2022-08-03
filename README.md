@@ -32,7 +32,7 @@ Balance tweaks for community multiplayer games (according to the server rules)
 
 ### <img src="https://ck3.paradoxwikis.com/images/0/0b/Trait_schemer.png" alt="schemer" width="32"/> <sup>Intrigue</sup>
 
-* Hostile scheme success chance without schemer trait has been lowered against player characters
+* Hostile scheme success chance without schemer trait can be disabled from the game rules
 * Claim throne scheme has been disabled for player characters
 
 ### <img src="https://ck3.paradoxwikis.com/images/0/0c/Trait_bastard_founder.png" alt="bastard_founder" width="32"/> <sup>Vassal</sup>
