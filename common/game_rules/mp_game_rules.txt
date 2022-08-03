@@ -1,3 +1,9 @@
+schemer_needs_perk = {
+	default = schemer_needs_perk_off
+	schemer_needs_perk_off = {}
+	schemer_needs_perk_on = {}
+}
+
 title_integration_speed = {
 	default = title_integration_speed_default
 	title_integration_speed_slow = {}
@@ -5,6 +11,15 @@ title_integration_speed = {
 	title_integration_speed_fast = {}
 	title_integration_speed_faster = {}
 	title_integration_speed_fastest = {}
+}
+
+increase_control_speed = {
+	default = increase_control_speed_default
+	increase_control_speed_slow = {}
+	increase_control_speed_default = {}
+	increase_control_speed_fast = {}
+	increase_control_speed_faster = {}
+	increase_control_speed_fastest = {}
 }
 
 offer_vassalization_difficulty = {
@@ -93,10 +108,4 @@ claim_liege_title_allowance = {
 	default = claim_liege_title_is_allowed
 	claim_liege_title_is_allowed = {}
 	claim_liege_title_is_restricted = {}
-}
-
-schemer_needs_perk = {
-	default = schemer_needs_perk_off
-	schemer_needs_perk_off = {}
-	schemer_needs_perk_on = {}
 }

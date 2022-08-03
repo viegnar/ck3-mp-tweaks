@@ -11,6 +11,18 @@
   setting_title_integration_speed_fastest: "Aşırı Hızlı"
   setting_title_integration_speed_fastest_desc: "[chancellor|E]nin [diplomacy|E] becerisinin, [Concept('de_jure_drift', '$task_integrate_title$')|E] hızına etkisi 5 kat artar."
 
+  rule_increase_control_speed: "#X MP Tweaks:#! [increase_control|LV] hızı"
+  setting_increase_control_speed_slow: "Yavaş"
+  setting_increase_control_speed_slow_desc: "[marshal|E]in [martial|E] becerisinin, [Concept('increase_control', 'kontrol arttırma')|E] hızına etkisi 50% azalır."
+  setting_increase_control_speed_default: "Varsayılan"
+  setting_increase_control_speed_default_desc: "Hiçbir değişiklik yok."
+  setting_increase_control_speed_fast: "Hızlı"
+  setting_increase_control_speed_fast_desc: "[marshal|E]in [martial|E] becerisinin, [Concept('increase_control', 'kontrol arttırma')|E] hızına etkisi 2 kat artar."
+  setting_increase_control_speed_faster: "Çok Hızlı"
+  setting_increase_control_speed_faster_desc: "[marshal|E]in [martial|E] becerisinin, [Concept('increase_control', 'kontrol arttırma')|E] hızına etkisi 3 kat artar."
+  setting_increase_control_speed_fastest: "Aşırı Hızlı"
+  setting_increase_control_speed_fastest_desc: "[marshal|E]in [martial|E] becerisinin, [Concept('increase_control', 'kontrol arttırma')|E] hızına etkisi 5 kat artar."
+
   rule_offer_vassalization_difficulty: "#X MP Tweaks:#! [offer_vassalization|LV] zorluğu"
   setting_offer_vassalization_difficulty_default: "Varsayılan"
   setting_offer_vassalization_difficulty_default_desc: "Hiçbir değişiklik yok."

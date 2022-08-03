@@ -227,7 +227,36 @@ marshal_increase_control_base = 0.2
 
 marshal_increase_county_control_monthly_change = {
 	add = martial
-	divide = 30
+	if = {
+		limit = {
+			has_game_rule = increase_control_speed_slow
+		}
+		divide = 60
+	}
+	if = {
+		limit = {
+			has_game_rule = increase_control_speed_default
+		}
+		divide = 30
+	}
+	if = {
+		limit = {
+			has_game_rule = increase_control_speed_fast
+		}
+		divide = 10
+	}
+	if = {
+		limit = {
+			has_game_rule = increase_control_speed_faster
+		}
+		divide = 10
+	}
+	if = {
+		limit = {
+			has_game_rule = increase_control_speed_fastest
+		}
+		divide = 6
+	}
 }
 
 marshal_increase_control_base_total = {
